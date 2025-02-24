@@ -4,7 +4,9 @@
 
  @foreach ($data as $index => $single)
      <tr>
-         <td>{{ $index + 1 }}</td>
+         @if (!isset($counter) || $counter)
+             <td>{{ $index + 1 }}</td>
+         @endif
          @if (isset($customColumns))
              @include('components.datatable.' . $customColumns, ['single' => $single])
          @else

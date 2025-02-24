@@ -44,6 +44,7 @@
                                             'hasShow' => true,
                                             'hasEdit' => false,
                                             'hasStatus' => true,
+                                            'counter' => false,
                                         ])
                                     </tbody>
                                 </table>

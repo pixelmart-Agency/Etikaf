@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": "../../../.."
+        },
+        {
+            "path": "../../../../../../../../xampp/htdocs/ftp"
+        }
+    ],
+    "settings": {
+        "i18n-ally.keystyle": "nested"
+    }
+}

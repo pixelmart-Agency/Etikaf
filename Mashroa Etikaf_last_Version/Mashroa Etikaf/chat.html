@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>E3tkaaf</title>
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/bootstrap.rtl@5.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/chat.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="header d-flex align-items-center justify-content-between">
+            <div class="header-right">
+                <a href="#" class="logo">
+                    <img src="assets/img_v2/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-left-cont d-flex align-items-center gap-2 justify-content-between flex-grow-1">
+                <form action="#" class="form-search">
+                    <fieldset>
+                        <legend class="sr-only">Search input</legend>
+                        <input type="search" class="form-control" id="inputSearch" placeholder="البحث"
+                            aria-label="Search input" name="inputSearch">
+                    </fieldset>
+                    <button type="submit" class="main-btn position-absolute top-50 translate-middle-y"
+                        aria-label="Submit search"></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3 ps-4">
+                    <ul class="nav user-menu">
+                        <li class="nav-item dropdown d-none d-sm-block">
+                            <a href="#" class="dropdown-toggle nav-link nav-bell" data-toggle="dropdown"><i
+                                    class="fa fa-bell-o"></i>
+                                <span class="badge badge-pill bg-danger float-end">3</span></a>
+                            <div class="dropdown-menu notifications">
+                                <div class="topnav-dropdown-header">
+                                    <span>Notifications</span>
+                                </div>
+                                <div class="drop-scroll">
+                                    <ul class="notification-list">
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">
+                                                        <img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+                                                    </span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">John Doe</span>
+                                                            added new task <span class="noti-title">Patient appointment
+                                                                booking</span></p>
+                                                        <p class="noti-time"><span class="notification-time">4 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Tarah
+                                                                Shropshire</span> changed the task name <span
+                                                                class="noti-title">Appointment booking with payment
+                                                                gateway</span></p>
+                                                        <p class="noti-time"><span class="notification-time">6 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">L</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Misty
+                                                                Tison</span>
+                                                            added <span class="noti-title">Domenic Houston</span> and
+                                                            <span class="noti-title">Claire Mapes</span> to project
+                                                            <span class="noti-title">Doctor available module</span>
+                                                        </p>
+                                                        <p class="noti-time"><span class="notification-time">8 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">G</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Rolland
+                                                                Webber</span> completed task <span
+                                                                class="noti-title">Patient
+                                                                and Doctor video
+                                                                conferencing</span></p>
+                                                        <p class="noti-time"><span class="notification-time">12 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Bernardo
+                                                                Galaviz</span> added new task <span
+                                                                class="noti-title">Private
+                                                                chat module</span></p>
+                                                        <p class="noti-time"><span class="notification-time">2 days
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="topnav-dropdown-footer">
+                                    <a href="activities.html">View all Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-arrow">
+                            <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                                <span class="user-img">
+                                    <img class="rounded-circle" src="assets/img_v2/user.png" width="32" height="32"
+                                        alt="تركي عبدالله قحطاني">
+                                    <span class="status online"></span>
+                                </span>
+                                <span>تركي عبدالله قحطاني</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">My Profile</a>
+                                <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile-user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                                class="fa fa-ellipsis-v"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                            <a class="dropdown-item" href="settings.html">Settings</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                    <a id="toggle_btn" href="javascript:void(0);">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a id="mobile_btn" class="mobile_btn" href="#sidebar"> <svg width="30px" height="30px"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">الطلبات الاساسية</li>
+                        <li class="tap-dashboard">
+                            <a href="index-2.html"><span>الصفحة الرئيسية</span></a>
+                        </li>
+                        <li class="tap-requests">
+                            <a href="requests.html"> <span>طلبات الاعتكاف</span> </a>
+                        </li>
+                        <li class="tap-digital">
+                            <a href="digitalSurveys.html" aria-current="page"> <span> الاستبيانات الرقمية </span> </a>
+                        </li>
+                        <li class="tap-service">
+                            <a href="serviceRequests.html"> <span> طلبات الخدمات </span> </a>
+                        </li>
+                        <li class="menu-title"> خدمات دعم المعتكفين </li>
+                        <li class="active tap-support">
+                            <a href="chat.html"> <span> التواصل مع الدعم</span> </a>
+                        </li>
+                        <li class="menu-title"> الموظفين</li>
+                        <li class="tap-employees">
+                            <a href="employees.html"> <span> قائمة الموظفين</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="chat-main-row card-bg px-4">
+                    <div class="menu-ul-chat d-flex align-items-center justify-content-between w-100 mb-3">
+                        <p class="fs-24 fw-medium text-blue mb-0">رسائل الدعم المباشر (44)</p>
+                        <a class="d-block d-lg-none flex-shrink-0 btn border-0" href="#chat_sidebar"
+                            aria-label="toggle users view menu" id="mobile_btn_chat"></a>
+                    </div>
+                    <div class="chat-main-wrapper">
+                        <div class="col-lg-3 message-view chat-profile-view chat-sidebar" id="chat_sidebar">
+                            <div class="sidebar-message mess-slimscroll">
+                                <ul>
+                                    <li class="li-search position-sticky top-0 z-1">
+                                        <fieldset class="position-relative mb-2 pb-1">
+                                            <legend class="sr-only">Search input</legend>
+                                            <input type="search" class="form-control" id="inputSearchTable"
+                                                autocomplete="off" placeholder="البحث" aria-label="Search input"
+                                                name="inputSearchTable">
+                                            <i
+                                                class="icon-search-i position-absolute top-50 translate-middle-y ms-3"></i>
+                                        </fieldset>
+                                    </li>
+                                    <li class="unread">
+                                        <a href="#"><span class="chat-avatar-sm user-img"><img src="assets/img/user.jpg"
+                                                    alt="" class="rounded-circle"><span
+                                                    class="status offline"></span></span>
+                                            <div class="badge-text-mess d-flex gap-2 flex-column">
+                                                <span>رقية بن عبد الله </span>
+                                                <span class="line-clamp text-light-blue fs-12 fw-medium">السلام عليكم،
+                                                    عندي مشكلة في تحميل الوثائق
+                                                    المطلوبة في استمارة الاعتكاف.</span>
+                                                <span class="fs-12 text-brown fw-normal">أمس</span>
+                                            </div>
+                                            <span class="badge rounded-pill bg-gold ms-auto">1</span>
+                                        </a>
+                                    </li>
+                                    <li class="unread">
+                                        <a href="#"><span class="chat-avatar-sm user-img"><img src="assets/img/user.jpg"
+                                                    alt="" class="rounded-circle"><span
+                                                    class="status offline"></span></span>
+                                            <div class="badge-text-mess d-flex gap-2 flex-column">
+                                                <span>رقية بن عبد الله </span>
+                                                <span class="line-clamp text-light-blue fs-12 fw-medium">السلام عليكم،
+                                                    عندي مشكلة في تحميل الوثائق
+                                                    المطلوبة في استمارة الاعتكاف.</span>
+                                                <span class="fs-12 text-brown fw-normal">أمس</span>
+                                            </div>
+                                            <span class="badge rounded-pill bg-gold ms-auto">5</span>
+                                        </a>
+                                    </li>
+                                    <li class="unread">
+                                        <a href="#"><span class="chat-avatar-sm user-img"><img src="assets/img/user.jpg"
+                                                    alt="" class="rounded-circle"><span
+                                                    class="status offline"></span></span>
+                                            <div class="badge-text-mess d-flex gap-2 flex-column">
+                                                <span>رقية بن عبد الله </span>
+                                                <span class="line-clamp text-light-blue fs-12 fw-medium">السلام عليكم،
+                                                    عندي مشكلة في تحميل الوثائق
+                                                    المطلوبة في استمارة الاعتكاف.</span>
+                                                <span class="fs-12 text-brown fw-normal">أمس</span>
+                                            </div>
+                                            <span class="badge rounded-pill bg-gold ms-auto">108</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="chat-avatar-sm user-img"><img src="assets/img/user.jpg"
+                                                    alt="" class="rounded-circle"><span
+                                                    class="status offline"></span></span>
+                                            <div class="badge-text-mess d-flex gap-2 flex-column">
+                                                <span>رقية بن عبد الله </span>
+                                                <span class="line-clamp text-light-blue fs-12 fw-medium">السلام عليكم،
+                                                    عندي مشكلة في تحميل الوثائق
+                                                    المطلوبة في استمارة الاعتكاف.</span>
+                                                <span class="fs-12 text-brown fw-normal">أمس</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="chat-avatar-sm user-img"><img src="assets/img/user.jpg"
+                                                    alt="" class="rounded-circle"><span
+                                                    class="status offline"></span></span>
+                                            <div class="badge-text-mess d-flex gap-2 flex-column">
+                                                <span>رقية بن عبد الله </span>
+                                                <span class="line-clamp text-light-blue fs-12 fw-medium">السلام عليكم،
+                                                    عندي مشكلة في تحميل الوثائق
+                                                    المطلوبة في استمارة الاعتكاف.</span>
+                                                <span class="fs-12 text-brown fw-normal">أمس</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 message-view chat-view">
+                            <div class="chat-window">
+                                <div class="chat-contents">
+                                    <div class="chat-content-wrap">
+                                        <div class="chat-wrap-inner">
+                                            <div class="chat-box">
+                                                <div class="chats" id="chat-container">
+
+                                                    <div class="chat-line">
+                                                        <span class="chat-date">3/20/2025</span>
+                                                    </div>
+                                                    <div class="chat chat-right">
+                                                        <div class="chat-avatar">
+                                                            <a href="profile.html" class="avatar">
+                                                                <img alt="Jennifer Robinson"
+                                                                    src="assets/img_v2/user.png"
+                                                                    class="img-fluid rounded-circle">
+                                                            </a>
+                                                        </div>
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                                        <p>مرحباً! كيف يمكننا مساعدتك اليوم؟</p>
+                                                                    </div>
+                                                                    <span class="chat-time">11:35 AM </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-left">
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <p>السلام عليكم، عندي مشكلة في تحميل الوثائق
+                                                                            المطلوبة في استمارة الاعتكاف.</p>
+                                                                    </div>
+                                                                    <span class="chat-time">
+                                                                        <span class="seen-message active"></span>
+                                                                        <span>11:31 AM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-left">
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <p>أبغي مساعدة عاجلة</p>
+                                                                    </div>
+                                                                    <span class="chat-time">
+                                                                        <span class="seen-message active"></span>
+                                                                        <span>11:31 AM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-right">
+                                                        <div class="chat-avatar">
+                                                            <a href="profile.html" class="avatar">
+                                                                <img alt="Jennifer Robinson"
+                                                                    src="assets/img_v2/user.png"
+                                                                    class="img-fluid rounded-circle">
+                                                            </a>
+                                                        </div>
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                                        <p>نأسف لذلك! هل يمكن توضيح نوع المشكلة التي
+                                                                            تواجهها؟</p>
+                                                                    </div>
+                                                                    <span class="chat-time">11:35 AM </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-left">
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <p>كلما حاولت رفع الصورة، تظهر رسالة "فشل
+                                                                            التحميل".</p>
+                                                                    </div>
+                                                                    <span class="chat-time">
+                                                                        <span class="seen-message active"></span>
+                                                                        <span>11:31 AM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-right">
+                                                        <div class="chat-avatar">
+                                                            <a href="profile.html" class="avatar">
+                                                                <img alt="Jennifer Robinson"
+                                                                    src="assets/img_v2/user.png"
+                                                                    class="img-fluid rounded-circle">
+                                                            </a>
+                                                        </div>
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                                        <p>فهمت!قد يكون حجم الملف أكبر من الحد المسموح
+                                                                            به أو نوع الملف غير مدعوم.</p>
+                                                                    </div>
+                                                                    <span class="chat-time">11:35 AM </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-right">
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                                        <p>يرجى التأكد من أن حجم الملف أقل من 5
+                                                                            ميجابايت، وأن يكون بصيغة JPEG أو PNG.</p>
+                                                                    </div>
+                                                                    <span class="chat-time">11:35 AM </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-left">
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <p>حاولت و تم الارسال، اشكرك</p>
+                                                                    </div>
+                                                                    <span class="chat-time">
+                                                                        <span class="seen-message active"></span>
+                                                                        <span>11:31 AM</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat chat-right">
+                                                        <div class="chat-avatar">
+                                                            <a href="profile.html" class="avatar">
+                                                                <img alt="Jennifer Robinson"
+                                                                    src="assets/img_v2/user.png"
+                                                                    class="img-fluid rounded-circle">
+                                                            </a>
+                                                        </div>
+                                                        <div class="chat-body">
+                                                            <div class="chat-bubble">
+                                                                <div class="chat-content d-flex gap-2">
+                                                                    <div>
+                                                                        <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                                        <p>على الرحب والسعة! 😊
+                                                                            نتمنى لك تجربة روحانية موفقة في الاعتكاف.
+                                                                        </p>
+                                                                    </div>
+                                                                    <span class="chat-time">11:35 AM </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-footer">
+                                    <div class="message-bar">
+                                        <div class="message-inner">
+
+                                            <div class="message-area position-relative">
+                                                <emoji-picker id="emoji-picker"></emoji-picker>
+
+                                                <div class="input-group bg-white rounded-2">
+                                                    <button id="emoji-picker-button" type="button"
+                                                        aria-label="Open emoji picker" aria-haspopup="dialog"
+                                                        aria-expanded="false"
+                                                        class="emoji-picker-btn btn bg-white rounded-2"></button>
+                                                    <textarea class="form-control bg-white border-0"
+                                                        placeholder="اكتب الرسالة..." id="chat-input"></textarea>
+                                                    <button id="send-button-chat"
+                                                        class="sub-mess-chat btn bg-white rounded-2" type="button"
+                                                        aria-label="submit message chat"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        let $messSlimScrolls = $('.mess-slimscroll');
+        if ($messSlimScrolls.length > 0) {
+            $messSlimScrolls.slimScroll({
+                height: 'auto',
+                width: '100%',
+                position: 'right',
+                size: '7px',
+                color: '#ccc',
+                wheelStep: 10,
+                touchScrollStep: 100
+            });
+        }
+    </script>
+    <script type="module">
+        // Import the Emoji Picker Element
+        import 'https://cdn.jsdelivr.net/npm/emoji-picker-element@1.7.0/index.js';
+
+        // DOM Elements
+        const chatWrapInner = $('.chat-wrap-inner');
+        const chatContainer = $('#chat-container');
+        const chatInput = $('#chat-input');
+        const emojiPickerButton = $('#emoji-picker-button');
+        const emojiPicker = $('#emoji-picker');
+        const sendButton = $('#send-button-chat');
+
+        // Toggle Emoji Picker
+        emojiPickerButton.on('click', () => {
+            emojiPicker.toggleClass('visible');
+        });
+
+        // Insert Emoji into Input
+        emojiPicker.on('emoji-click', (event) => {
+            const emoji = event.detail.unicode;
+            chatInput.val(chatInput.val() + emoji);
+        });
+
+        // Send Message
+        sendButton.on('click', () => {
+            const message = chatInput.val().trim();
+            if (message) {
+                addMessage(message, 'admin');
+                chatInput.val('');
+            }
+        });
+        function getFormattedTime() {
+            const date = new Date(); // Get the current date and time
+            let hours = date.getHours(); // Get hours (0-23)
+            let minutes = date.getMinutes(); // Get minutes (0-59)
+            const ampm = hours >= 12 ? 'PM' : 'AM'; // Determine AM or PM
+
+            // Convert 24-hour format to 12-hour format
+            hours = hours % 12 || 12; // Convert 0 to 12 for 12 AM
+
+            // Add leading zero to minutes if needed
+            minutes = minutes < 10 ? `0${minutes}` : minutes;
+
+            // Return formatted time (e.g., "11:31 AM")
+            return `${hours}:${minutes} ${ampm}`;
+        }
+
+        let IsAddImg = false;
+        // Add Message to Chat
+        function addMessage(message, sender) {
+            let messType = '';
+            let imgBox = '';
+            if (sender == "admin") {
+                if (IsAddImg == true) {
+                    imgBox = `<div class="chat-avatar">
+                                <a href="profile.html" class="avatar">
+                                    <img alt="Jennifer Robinson" src="assets/img_v2/user.png" class="img-fluid rounded-circle">
+                                </a>
+                            </div>`;
+                }
+                messType = `<div class="chat chat-right">
+                                ${imgBox}
+                                <div class="chat-body">
+                                    <div class="chat-bubble">
+                                        <div class="chat-content d-flex gap-2">
+                                            <div>
+                                                <h6 class="fs-16 fw-medium text-blue">دعم</h6>
+                                                <p>${message}</p>
+                                            </div>
+                                            <span class="chat-time">${getFormattedTime()}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+                IsAddImg = false;
+            } else {
+                messType = `<div class="chat chat-left">
+                                <div class="chat-body">
+                                    <div class="chat-bubble">
+                                        <div class="chat-content d-flex gap-2">
+                                            <div>
+                                                <p>${message}</p>
+                                            </div>
+                                            <span class="chat-time">
+                                                <span class="seen-message"></span>
+                                                <span>${getFormattedTime()}</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+                IsAddImg = true;
+            }
+
+            $('#chat-container').append(messType);
+            chatWrapInner.scrollTop(chatWrapInner[0].scrollHeight);
+        }
+
+        // Example: Add a welcome message for Testing
+        addMessage('Welcome to the chat! 😊', 'user');
+
+        $(document).mouseup(function (event) {
+            let eventTarget = $(event.target);
+            if (!eventTarget.hasClass('visible') && !eventTarget.hasClass('emoji-picker-btn')) {
+                emojiPicker.removeClass('visible');
+            }
+        });
+    </script>
+</body>
+
+
+
+</html>

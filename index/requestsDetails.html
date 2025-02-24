@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>E3tkaaf</title>
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/bootstrap.rtl@5.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/custom.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="header d-flex align-items-center justify-content-between">
+            <div class="header-right">
+                <a href="#" class="logo">
+                    <img src="assets/img_v2/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-left-cont d-flex align-items-center gap-2 justify-content-between flex-grow-1">
+                <form action="#" class="form-search">
+                    <fieldset>
+                        <legend class="sr-only">Search input</legend>
+                        <input type="search" class="form-control" id="inputSearch" placeholder="البحث"
+                            aria-label="Search input" name="inputSearch">
+                    </fieldset>
+                    <button type="submit" class="main-btn position-absolute top-50 translate-middle-y"
+                        aria-label="Submit search"></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3 ps-4">
+                    <ul class="nav user-menu">
+                        <li class="nav-item dropdown d-none d-sm-block">
+                            <a href="#" class="dropdown-toggle nav-link nav-bell" data-toggle="dropdown"><i
+                                    class="fa fa-bell-o"></i>
+                                <span class="badge badge-pill bg-danger float-end">3</span></a>
+                            <div class="dropdown-menu notifications">
+                                <div class="topnav-dropdown-header">
+                                    <span>Notifications</span>
+                                </div>
+                                <div class="drop-scroll">
+                                    <ul class="notification-list">
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">
+                                                        <img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+                                                    </span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">John Doe</span>
+                                                            added new task <span class="noti-title">Patient appointment
+                                                                booking</span></p>
+                                                        <p class="noti-time"><span class="notification-time">4 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Tarah
+                                                                Shropshire</span> changed the task name <span
+                                                                class="noti-title">Appointment booking with payment
+                                                                gateway</span></p>
+                                                        <p class="noti-time"><span class="notification-time">6 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">L</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Misty
+                                                                Tison</span>
+                                                            added <span class="noti-title">Domenic Houston</span> and
+                                                            <span class="noti-title">Claire Mapes</span> to project
+                                                            <span class="noti-title">Doctor available module</span>
+                                                        </p>
+                                                        <p class="noti-time"><span class="notification-time">8 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">G</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Rolland
+                                                                Webber</span> completed task <span
+                                                                class="noti-title">Patient
+                                                                and Doctor video
+                                                                conferencing</span></p>
+                                                        <p class="noti-time"><span class="notification-time">12 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Bernardo
+                                                                Galaviz</span> added new task <span
+                                                                class="noti-title">Private
+                                                                chat module</span></p>
+                                                        <p class="noti-time"><span class="notification-time">2 days
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="topnav-dropdown-footer">
+                                    <a href="activities.html">View all Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-arrow">
+                            <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                                <span class="user-img">
+                                    <img class="rounded-circle" src="assets/img_v2/user.png" width="32" height="32"
+                                        alt="تركي عبدالله قحطاني">
+                                    <span class="status online"></span>
+                                </span>
+                                <span>تركي عبدالله قحطاني</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">My Profile</a>
+                                <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile-user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                                class="fa fa-ellipsis-v"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                            <a class="dropdown-item" href="settings.html">Settings</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                    <a id="toggle_btn" href="javascript:void(0);">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a id="mobile_btn" class="mobile_btn" href="#sidebar"> <svg width="30px" height="30px"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">الطلبات الاساسية</li>
+                        <li class="tap-dashboard">
+                            <a href="index-2.html"><span>الصفحة الرئيسية</span></a>
+                        </li>
+                        <li class="active tap-requests">
+                            <a href="requests.html" aria-current="page"> <span>طلبات الاعتكاف</span> </a>
+                        </li>
+                        <li class="tap-digital">
+                            <a href="chat.html"> <span> الاستبيانات الرقمية </span> </a>
+                        </li>
+                        <li class="tap-service">
+                            <a href="chat.html"> <span> طلبات الخدمات </span> </a>
+                        </li>
+                        <li class="menu-title"> خدمات دعم المعتكفين </li>
+                        <li class="tap-support">
+                            <a href="chat.html"> <span> التواصل مع الدعم</span> </a>
+                        </li>
+                        <li class="menu-title"> الموظفين</li>
+                        <li class="tap-employees">
+                            <a href="chat.html"> <span> قائمة الموظفين</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-4">
+                                <li class="breadcrumb-item home"><a href="index.html"></a></li>
+                                <li class="breadcrumb-item"><a href="requests.html">طلبات الاعتكاف</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">تفاصيل طلب الاعتكاف</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-7 col-xl-8">
+                        <div class="card-bg px-4">
+                            <div class="text-head d-flex flex-wrap justify-content-between gap-3">
+                                <div class="text-cont-right d-flex gap-3">
+                                    <div class="img-cont img-placeholder">
+                                        <img src="assets/img_v2/img-placeholder.png" class="w-100 mw-100 rounded-circle"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="block-subtitle fs-14 text-light-blue-92">رقم الهوية/رقم الجواز</h3>
+                                        <h2 class="block-title fs-20 mb-0 text-break">2378903242</h2>
+                                    </div>
+                                </div>
+                                <div class="text-cont-left">
+                                    <span class="under-review">
+                                        <span>تحت المراجعة</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="text-body">
+                                <table class="basic-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>رقم الطلب</span>
+                                                <p>#2378903242</p>
+                                            </td>
+                                            <td>
+                                                <span>الاسم</span>
+                                                <p>عبدالله محمد القحطاني</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>الجنسية</span>
+                                                <p>سعودي</p>
+                                            </td>
+                                            <td>
+                                                <span>تاريخ الاعتكاف</span>
+                                                <p>19 رمضان : 22 رمضان</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>الحرم</span>
+                                                <p>#2378903242</p>
+                                            </td>
+                                            <td>
+                                                <span>الموقع داخل الحرم</span>
+                                                <p>مقام ابراهيم</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>العمر</span>
+                                                <p>23 سنة</p>
+                                            </td>
+                                            <td>
+                                                <span>رقم الجوال</span>
+                                                <p>+966 555 5555 555</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-xl-4 d-flex flex-column">
+                        <div class="card-bg px-4 mb-4 flex-grow-1">
+                            <h3 class="block-subtitle mb-3 text-blue fw-medium">الخريطة التفاعلية</h3>
+                            <div class="card-map">
+                                <div class="img-cont rounded-3">
+                                    <img src="assets/img_v2/interactive-map.png"
+                                        class="w-100 mw-100 d-block mh-100 rounded-3" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-bg p-4 flex-grow-1">
+                            <h4 class="block-subtitle mb-30 fw-medium fs-16 text-blue">تفاصيل حول المكان </h4>
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div>
+                                    <span class="text-light-blue-92 fs-14">الموقع داخل الحرم</span>
+                                    <h4 class="block-subtitle mb-0 mt-3 fw-medium fs-16 text-blue">مقام ابراهيم</h4>
+                                </div>
+                                <span class="acceptable"><span>طلبات قليلة</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-50">
+                    <div class="col-12">
+                        <div class="text-cont card-bg px-4 py-3">
+                            <div class="btn-cont justify-content-end gap-3">
+                                <a href="#" class="main-btn text-red bg-light-red" data-toggle="modal"
+                                    data-target="#request-denied">رفض الطلب</a>
+
+                                <a href="#" class="main-btn" data-toggle="modal" data-target="#request-accept">قبول
+                                    الطلب</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="request-accept" class="modal fade" role="dialog" aria-modal="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content modal-md border-0 py-5 px-3 px-md-4 px-lg-5">
+                    <div class="modal-header border-0 flex-column align-items-center py-0 mb-4">
+                        <div class="img-cont mb-4">
+                            <img src="assets/img_v2/img-request-denied.png" class="w-100 mw-100" alt="">
+                        </div>
+                        <h2 class="block-title mb-2 fs-24">هل أنت متأكد من رغبتك في قبول هذا الطلب؟</h2>
+                        <div class="block-text fs-18">
+                            <p>بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+                        </div>
+                    </div>
+                    <div class="modal-body py-0">
+                        <form>
+                            <div class="form-group">
+                                <label class="sr-only">نعم اوافق</label>
+                                <input type="hidden" name="request-accept-input" value="1">
+                            </div>
+                            <div class="btn-cont gap-2 justify-content-center">
+                                <button type="button" class="main-btn text-blue bg-main-color close"
+                                    data-dismiss="modal">إلغاء</button>
+                                <button type="submit" class="main-btn bg-gold">قبول الطلب</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="request-denied" class="modal fade" role="dialog" aria-modal="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content modal-md border-0 py-5 px-3 px-md-4 px-lg-5">
+                    <div class="modal-header border-0 flex-column align-items-center py-0 mb-4">
+                        <div class="img-cont mb-4">
+                            <img src="assets/img_v2/img-request-denied.png" class="w-100 mw-100" alt="">
+                        </div>
+                        <h2 class="block-title mb-2 fs-24">هل أنت متأكد من رغبتك في رفض هذا الطلب؟</h2>
+                        <div class="block-text fs-18">
+                            <p>بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+                        </div>
+                    </div>
+                    <div class="modal-body py-0">
+                        <form>
+                            <div class="form-group mb-40">
+                                <label class="mb-2 text-blue fw-medium">سبب الحذف</label>
+                                <select class="select form-select" aria-label="Default select example">
+                                    <option selected>اختر سبب الحذف</option>
+                                    <option value="1">لا شئ</option>
+                                    <option value="2">نعم</option>
+                                    <option value="3">لا</option>
+                                </select>
+                            </div>
+                            <div class="btn-cont gap-2 justify-content-center">
+                                <button type="button" class="main-btn text-blue bg-main-color close"
+                                    data-dismiss="modal">إلغاء</button>
+                                <button type="submit" class="main-btn bg-gold">رفض الطلب</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+
+
+</html>

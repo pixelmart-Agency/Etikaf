@@ -1,0 +1,21 @@
+ .alert.alert-dismissible i {
+     position: relative;
+     width: 35px;
+     height: 35px;
+     flex-shrink: 0;
+     border-radius: 8px;
+     background-color: rgb(135, 46, 30);
+ }
+
+ .alert.alert-dismissible i::after {
+     content: '';
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 20px;
+     height: 20px;
+     border-radius: 8px;
+     background: url('img_v2/req-failed-icon.svg') center/contain no-repeat;
+     filter: grayscale(100%) brightness(200%) contrast(1000%);
+ }

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>E3tkaaf</title>
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/bootstrap.rtl@5.3.3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css_v2/custom.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <div class="header d-flex align-items-center justify-content-between">
+            <div class="header-right">
+                <a href="#" class="logo">
+                    <img src="assets/img_v2/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-left-cont d-flex align-items-center gap-2 justify-content-between flex-grow-1">
+                <form action="#" class="form-search">
+                    <fieldset>
+                        <legend class="sr-only">Search input</legend>
+                        <input type="search" class="form-control" id="inputSearch" placeholder="البحث"
+                            aria-label="Search input" name="inputSearch">
+                    </fieldset>
+                    <button type="submit" class="main-btn position-absolute top-50 translate-middle-y"
+                        aria-label="Submit search"></button>
+                </form>
+
+                <div class="d-flex align-items-center gap-3 ps-4">
+                    <ul class="nav user-menu">
+                        <li class="nav-item dropdown d-none d-sm-block">
+                            <a href="#" class="dropdown-toggle nav-link nav-bell" data-toggle="dropdown"><i
+                                    class="fa fa-bell-o"></i>
+                                <span class="badge badge-pill bg-danger float-end">3</span></a>
+                            <div class="dropdown-menu notifications">
+                                <div class="topnav-dropdown-header">
+                                    <span>Notifications</span>
+                                </div>
+                                <div class="drop-scroll">
+                                    <ul class="notification-list">
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">
+                                                        <img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+                                                    </span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">John Doe</span>
+                                                            added new task <span class="noti-title">Patient appointment
+                                                                booking</span></p>
+                                                        <p class="noti-time"><span class="notification-time">4 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Tarah
+                                                                Shropshire</span> changed the task name <span
+                                                                class="noti-title">Appointment booking with payment
+                                                                gateway</span></p>
+                                                        <p class="noti-time"><span class="notification-time">6 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">L</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Misty
+                                                                Tison</span>
+                                                            added <span class="noti-title">Domenic Houston</span> and
+                                                            <span class="noti-title">Claire Mapes</span> to project
+                                                            <span class="noti-title">Doctor available module</span>
+                                                        </p>
+                                                        <p class="noti-time"><span class="notification-time">8 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">G</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Rolland
+                                                                Webber</span> completed task <span
+                                                                class="noti-title">Patient
+                                                                and Doctor video
+                                                                conferencing</span></p>
+                                                        <p class="noti-time"><span class="notification-time">12 mins
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-message">
+                                            <a href="activities.html">
+                                                <div class="media">
+                                                    <span class="avatar">V</span>
+                                                    <div class="media-body">
+                                                        <p class="noti-details"><span class="noti-title">Bernardo
+                                                                Galaviz</span> added new task <span
+                                                                class="noti-title">Private
+                                                                chat module</span></p>
+                                                        <p class="noti-time"><span class="notification-time">2 days
+                                                                ago</span></p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="topnav-dropdown-footer">
+                                    <a href="activities.html">View all Notifications</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown has-arrow">
+                            <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                                <span class="user-img">
+                                    <img class="rounded-circle" src="assets/img_v2/user.png" width="32" height="32"
+                                        alt="تركي عبدالله قحطاني">
+                                    <span class="status online"></span>
+                                </span>
+                                <span>تركي عبدالله قحطاني</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="profile.html">My Profile</a>
+                                <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                                <a class="dropdown-item" href="settings.html">Settings</a>
+                                <a class="dropdown-item" href="login.html">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown mobile-user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                                class="fa fa-ellipsis-v"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                            <a class="dropdown-item" href="settings.html">Settings</a>
+                            <a class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                    <a id="toggle_btn" href="javascript:void(0);">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a id="mobile_btn" class="mobile_btn" href="#sidebar"> <svg width="30px" height="30px"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H20M4 8H20M4 16H12" stroke="#25343E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">الطلبات الاساسية</li>
+                        <li class="tap-dashboard">
+                            <a href="index-2.html"><span>الصفحة الرئيسية</span></a>
+                        </li>
+                        <li class="tap-requests">
+                            <a href="requests.html"> <span>طلبات الاعتكاف</span> </a>
+                        </li>
+                        <li class="active tap-digital">
+                            <a href="digitalSurveys.html" aria-current="page"> <span> الاستبيانات الرقمية </span> </a>
+                        </li>
+                        <li class="tap-service">
+                            <a href="serviceRequests.html"> <span> طلبات الخدمات </span> </a>
+                        </li>
+                        <li class="menu-title"> خدمات دعم المعتكفين </li>
+                        <li class="tap-support">
+                            <a href="#"> <span> التواصل مع الدعم</span> </a>
+                        </li>
+                        <li class="menu-title"> الموظفين</li>
+                        <li class="tap-employees">
+                            <a href="employees.html"> <span> قائمة الموظفين</span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-4 mt-2">
+                                <li class="breadcrumb-item home"><a href="index.html"></a></li>
+                                <li class="breadcrumb-item"><a href="digitalSurveys.html">الاستبيانات الرقمية</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">إنشاء استبيان جديد</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row row-main-order">
+                    <div class="col-12">
+                        <form action="#">
+                            <div class="card-bg px-4">
+                                <div class="card-create-survey">
+                                    <h3 class="block-title border-bottom mb-4 pb-4">إعدادت الاستبيانات العامة</h3>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <fieldset class="flex-grow-1">
+                                            <label for="nameSurvey" class="block-title fs-14">المرسلة</label>
+                                            <input type="text" id="nameSurvey" name="nameSurvey"
+                                                placeholder="اسم الاستبيان" class="form-control">
+                                        </fieldset>
+                                        <fieldset class="flex-grow-1">
+                                            <label for="startDateSurvey" class="block-title fs-14">تاريخ فتح
+                                                الاستبيان</label>
+                                            <div class="cal-icon">
+                                                <input class="form-control datetimepicker" type="text"
+                                                    id="startDateSurvey" name="startDateSurvey"
+                                                    placeholder="اختر وقت تاريخ فتح الاستبيان">
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="flex-grow-1">
+                                            <label for="endtDateSurvey" class="block-title fs-14">تاريخ غلق
+                                                الاستبيان</label>
+                                            <div class="cal-icon">
+                                                <input class="form-control datetimepicker" type="text"
+                                                    id="endtDateSurvey" name="endtDateSurvey"
+                                                    placeholder="اختر وقت تاريخ غلق الاستبيان">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bg px-4">
+                                <div class="card-create-survey">
+                                    <h3 class="block-title border-bottom mb-4 pb-4">اسئلة الاستبيان</h3>
+                                    <div class="card-gray-bg px-4 pb-4" id="queCardmain">
+                                        <div
+                                            class="que-head d-flex align-items-center gap-3 flex-wrap-reverse justify-content-between">
+                                            <div class="que-h-right d-flex align-items-center">
+                                                <span class="que-menu-icon" aria-hidden="true"></span>
+                                                <span class="que-inc" aria-hidden="true"></span>
+                                                <h4 class="block-title fs-18 mb-0 ms-3">صيغة السؤال</h4>
+                                            </div>
+                                            <div class="que-h-left d-flex align-items-center gap-3 ms-auto">
+                                                <button type="button" class="btn que-trash" data-toggle="modal"
+                                                    data-target="#remove-que-modal"></button>
+                                                <button type="button" class="btn que-arrow" data-toggle="collapse"
+                                                    data-target="#collapseExample1" aria-expanded="true"
+                                                    aria-controls="collapseExample1">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="que-body border-top pt-4 mt-3 collapse show" id="collapseExample1">
+                                            <fieldset class="mb-3 que-name">
+                                                <label for="nameQue1" class="block-title fs-14">السؤال</label>
+                                                <input type="text" id="nameQue1" name="nameQue1" placeholder="السؤال"
+                                                    class="form-control bg-white">
+                                            </fieldset>
+                                            <fieldset
+                                                class="ques-types d-flex align-items-center gap-3 overflow-hidden position-relative">
+                                                <div class="form-group mb-0 form-typeQue flex-shrink-0">
+                                                    <label for="typeQue1" class="block-title fs-14">نوع السؤال</label>
+                                                    <select class="select floating bg-white select-type-que" dir="rtl"
+                                                        id="typeQue1" name="typeQue1">
+                                                        <option value="1" selected>مقالي</option>
+                                                        <option value="2">اختيار من متعدد</option>
+                                                        <option value="3">تقييم</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group mb-0 form-typeAns flex-shrink-0">
+                                                    <label for="typeAnswer1" class="block-title fs-14">نوع
+                                                        الاجابة</label>
+                                                    <select class="select floating bg-white" dir="rtl" id="typeAnswer1"
+                                                        name="typeAnswer1">
+                                                        <option value="1" selected>اجباري</option>
+                                                        <option value="2">اختياري</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group mb-0 form-maxNum">
+                                                    <label for="maxNumCharacters1" class="block-title fs-14">العدد
+                                                        الاقصى للحروف</label>
+                                                    <div class="data-icon" data-holder="حرف">
+                                                        <input type="text" id="maxNumCharacters1"
+                                                            name="maxNumCharacters1" placeholder="500"
+                                                            class="form-control bg-white">
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="answer-options pt-4" style="display: none;">
+                                                <h2 class="fs-18 fw-medium mb-4">خيارات الاجوبة</h2>
+                                                <fieldset
+                                                    class="answer-options-groups d-flex align-items-center flex-wrap">
+
+                                                    <div class="form-group mb-3 w-50 px-2">
+                                                        <label for="inputAnsOptions1-1" class="block-title fs-14">عنوان
+                                                            الاجابة</label>
+                                                        <div class="delete-icon position-relative">
+                                                            <input type="text" id="inputAnsOptions1-1"
+                                                                name="inputAnsOptions1-1"
+                                                                placeholder="صيغة اختيار الاجابة"
+                                                                class="form-control bg-white">
+                                                            <button type="button"
+                                                                class="main-btn p-0 border-0 bg-white fs-14 text-red position-absolute end-0 top-50 translate-middle-y me-3 btnDeleAnsOptions">حذف</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-3 w-50 px-2">
+                                                        <label for="inputAnsOptions1-2" class="block-title fs-14">عنوان
+                                                            الاجابة</label>
+                                                        <div class="delete-icon position-relative">
+                                                            <input type="text" id="inputAnsOptions1-2"
+                                                                name="inputAnsOptions1-2"
+                                                                placeholder="صيغة اختيار الاجابة"
+                                                                class="form-control bg-white">
+                                                            <button type="button"
+                                                                class="main-btn p-0 border-0 bg-white fs-14 text-red position-absolute end-0 top-50 translate-middle-y me-3 btnDeleAnsOptions">حذف</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-3 w-50 px-2">
+                                                        <label for="inputAnsOptions1-3" class="block-title fs-14">عنوان
+                                                            الاجابة</label>
+                                                        <div class="delete-icon position-relative">
+                                                            <input type="text" id="inputAnsOptions1-3"
+                                                                name="inputAnsOptions1-3"
+                                                                placeholder="صيغة اختيار الاجابة"
+                                                                class="form-control bg-white">
+                                                            <button type="button"
+                                                                class="main-btn p-0 border-0 bg-white fs-14 text-red position-absolute end-0 top-50 translate-middle-y me-3 btnDeleAnsOptions">حذف</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-3 w-50 px-2">
+                                                        <label for="inputAnsOptions1-4" class="block-title fs-14">عنوان
+                                                            الاجابة</label>
+                                                        <div class="delete-icon position-relative">
+                                                            <input type="text" id="inputAnsOptions1-4"
+                                                                name="inputAnsOptions1-4"
+                                                                placeholder="صيغة اختيار الاجابة"
+                                                                class="form-control bg-white">
+                                                            <button type="button"
+                                                                class="main-btn p-0 border-0 bg-white fs-14 text-red position-absolute end-0 top-50 translate-middle-y me-3 btnDeleAnsOptions">حذف</button>
+                                                        </div>
+                                                    </div>
+
+                                                </fieldset>
+                                                <button type="button"
+                                                    class="btnAddNewAns main-btn p-0 bg-transparent mt-1 text-gold d-flex align-items-center"
+                                                    data-id="1">اضافة اجابة جديدة</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button"
+                                        class="main-btn p-0 bg-transparent mt-4 text-gold d-flex align-items-center"
+                                        id="btnAddNewQue">اضافة سؤال جديد</button>
+                                </div>
+                            </div>
+                            <div class="card-bg px-4 py-3 mt-4">
+                                <div class="text-cont">
+                                    <div class="btn-cont justify-content-between gap-3 flex-wrap">
+                                        <button type="button" class="main-btn bg-main-color text-blue"
+                                            data-toggle="modal" data-target="#request-denied">إلغاء</button>
+
+                                        <button type="button" class="main-btn bg-gold" data-toggle="modal"
+                                            data-target="#request-createSurvey">إرسال الاستبيان</button>
+                                    </div>
+                                </div>
+                                <div id="request-createSurvey" class="modal fade" role="dialog" aria-modal="true"
+                                    style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content modal-md border-0 py-5 px-3 px-md-4 px-lg-5">
+                                            <div class="modal-header border-0 flex-column align-items-center py-0 mb-40">
+                                                <div class="img-cont mb-4">
+                                                    <img src="assets/img_v2/img-request-denied.png" class="w-100 mw-100"
+                                                        alt="">
+                                                </div>
+                                                <h2 class="block-title mb-2 fs-24">هل أنت متأكد من رغبتك في إرسال الاستبيان؟</h2>
+                                                <div class="block-text fs-18">
+                                                    <p>بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-body py-0">
+                                                <div class="btn-cont gap-2 justify-content-center">
+                                                    <button type="button" class="main-btn text-blue bg-main-color close"
+                                                        data-dismiss="modal">إلغاء</button>
+                                                    <button type="submit" class="main-btn bg-gold"
+                                                        id="btn-remove-que">إرسال الاستبيان</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="remove-que-modal" class="modal fade" role="dialog" aria-modal="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content modal-md border-0 py-5 px-3 px-md-4 px-lg-5">
+                <div class="modal-header border-0 flex-column align-items-center py-0 mb-4">
+                    <div class="img-cont mb-4">
+                        <img src="assets/img_v2/img-request-denied.png" class="w-100 mw-100" alt="">
+                    </div>
+                    <h2 class="block-title mb-2 fs-24">هل أنت متأكد من رغبتك في حذف هذا السؤال؟</h2>
+                    <div class="block-text fs-18">
+                        <p>بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+                    </div>
+                </div>
+                <div class="modal-body py-0">
+                    <div class="btn-cont gap-2 justify-content-center">
+                        <button type="button" class="main-btn text-blue bg-main-color close"
+                            data-dismiss="modal">إلغاء</button>
+                        <button type="button" class="main-btn bg-gold" id="btn-remove-que">حذف السؤال</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            window.addEventListener('beforeunload', function (e) {
+                // Set a custom message (note: most browsers ignore this message)
+                const message = "Are you sure you want to leave this page? Unsaved changes may be lost.";
+
+                // Standard way to show the alert
+                e.preventDefault(); // Some browsers require this to trigger the dialog
+                e.returnValue = message; // This is necessary for older browsers
+
+                return message; // For some older browsers
+            });
+        });
+    </script>
+</body>
+
+</html>

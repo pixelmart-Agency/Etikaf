@@ -6,6 +6,8 @@
      <tr>
          @if (!isset($counter) || $counter)
              <td>{{ $index + 1 }}</td>
+         @else
+             <td>{{ $single->id }}</td>
          @endif
          @if (isset($customColumns))
              @include('components.datatable.' . $customColumns, ['single' => $single])

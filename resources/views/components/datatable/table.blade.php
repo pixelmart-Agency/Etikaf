@@ -4,7 +4,7 @@
 
  @foreach ($data as $index => $single)
      <tr>
-         @if (!isset($counter))
+         @if ($route != 'surveys')
              <td>{{ $index + 1 }}</td>
          @else
              <td>{{ $single->id }}</td>

@@ -27,6 +27,7 @@
                                 <table class="table table-striped custom-table mb-0 datatable">
                                     <thead>
                                         <tr>
+                                            <th>#</th>
                                             <th>{{ __('translation.survey_id') }}</th>
                                             <th>{{ __('translation.survey_title') }}</th>
                                             <th>{{ __('translation.survey_start_date') }}</th>
@@ -44,7 +45,6 @@
                                             'hasShow' => true,
                                             'hasEdit' => false,
                                             'hasStatus' => true,
-                                            'counter' => true,
                                         ])
                                     </tbody>
                                 </table>

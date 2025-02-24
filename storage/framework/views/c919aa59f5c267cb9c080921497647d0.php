@@ -12,6 +12,7 @@
                     'placeholder' => __('translation.SearchSurvey'),
                     'btn' => __('translation.addNewSurvey'),
                     'exportRoute' => route('surveys.export'),
+                    'fileName' => __('translation.surveys_report'),
                 ], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <div class="card-body-table">
                     <div class="row">
@@ -26,6 +27,7 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
+                                            <th><?php echo e(__('translation.survey_id')); ?></th>
                                             <th><?php echo e(__('translation.survey_title')); ?></th>
                                             <th><?php echo e(__('translation.survey_start_date')); ?></th>
                                             <th><?php echo e(__('translation.survey_end_date')); ?></th>

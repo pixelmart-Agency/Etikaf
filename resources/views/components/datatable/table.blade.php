@@ -4,17 +4,15 @@
 
  @foreach ($data as $index => $single)
      <tr>
-         @if ($route != 'surveys')
-             <td>{{ $index + 1 }}</td>
-         @else
-             <td>{{ $single->id }}</td>
-         @endif
+         <td>{{ $index + 1 }}</td>
          @if (isset($customColumns))
              @include('components.datatable.' . $customColumns, ['single' => $single])
          @else
              @foreach ($single->toArray(request()) as $key => $value)
                  @if ($key !== 'id')
                      <td>{!! $value !!}</td>
+                 @elseif ($key === 'id' && $route === 'surveys')
+                     <td>{{ $single->id }}</td>
                  @endif
              @endforeach
          @endif

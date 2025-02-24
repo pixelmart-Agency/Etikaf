@@ -11,6 +11,8 @@
              <?php $__currentLoopData = $single->toArray(request()); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                  <?php if($key !== 'id'): ?>
                      <td><?php echo $value; ?></td>
+                 <?php elseif($key === 'id' && $route === 'surveys'): ?>
+                     <td><?php echo e($single->id); ?></td>
                  <?php endif; ?>
              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
          <?php endif; ?>

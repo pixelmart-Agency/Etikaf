@@ -651,4 +651,6 @@
     'pages_report' => 'تقرير الصفحات',
     'reasons_report' => 'تقرير اسباب الرفض',
     'retreat_requests_report' => 'تقرير طلبات الاعتكاف',
+    'survey_id' => 'رقم الاستبيان',
+
 );

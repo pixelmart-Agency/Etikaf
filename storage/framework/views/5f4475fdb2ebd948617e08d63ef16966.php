@@ -154,12 +154,12 @@
         }
     </style>
     <script>
-        // window.onload = function() {
-        //     const creative_loader_overlay = document.querySelector('div.creative_loader-overlay');
-        //     if (creative_loader_overlay) {
-        //         creative_loader_overlay.style.display = 'none';
-        //     }
-        // };
+        window.onload = function() {
+            const creative_loader_overlay = document.querySelector('div.creative_loader-overlay');
+            if (creative_loader_overlay) {
+                creative_loader_overlay.style.display = 'none';
+            }
+        };
     </script>
     <?php echo $__env->make('layouts.head-css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo e(assetUrl('css_v2/style.css')); ?>">
@@ -171,7 +171,24 @@
     <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
 
     <body>
-        
+        <div class="creative_loader-overlay">
+            <div class="creative_loader-container" role="status" aria-label="Loading...">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
     <div class="main-wrapper"> <?php echo $__env->yieldSection(); ?>
         <!-- Begin page -->
         <?php echo $__env->make('layouts.topbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

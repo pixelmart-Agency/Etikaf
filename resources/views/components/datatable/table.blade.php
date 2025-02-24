@@ -4,7 +4,7 @@
 
  @foreach ($data as $index => $single)
      <tr>
-         @if (!isset($counter) || $counter)
+         @if (!isset($counter))
              <td>{{ $index + 1 }}</td>
          @else
              <td>{{ $single->id }}</td>

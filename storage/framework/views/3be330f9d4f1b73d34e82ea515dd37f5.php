@@ -12,6 +12,7 @@
                     'placeholder' => __('translation.SearchDeleteReasons'),
                     'btn' => __('translation.addNewReason'),
                     'exportRoute' => route('delete-reasons.export'),
+                    'fileName' => __('translation.delete_reasons_report'),
                 ], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <div class="card-body-table">
                     <div class="row">

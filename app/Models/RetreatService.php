@@ -50,10 +50,15 @@ class RetreatService extends Model implements HasMedia
     public function getIsRequestedAttribute()
     {
         $userId = user_id();
+        $currentSeason = currentSeason();
+        if (!$currentSeason) {
+            return false;
+        }
         if (!$userId) {
             return false;
         }
-        return $this->retreatRequest()->where('user_id', $userId)->exists();
+        return $this->retreatRequest()->where('retreat_season_id', $currentSeason->id)
+            ->where('user_id', $userId)->exists();
     }
     public function scopeFilter($query, $params = [])
     {

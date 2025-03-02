@@ -22,7 +22,6 @@ class RateService
 {
     public function rate(int $rate, string $comment)
     {
-        dd(latestEndedSeason());
         $rateObject = RetreatRate::create([
             'user_id' => user_id(),
             'rate' => $rate,

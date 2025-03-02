@@ -88,11 +88,14 @@ class SurveyController extends Controller
                     }
                 }
             }
-            try {
-                $sendUserNotificationAction = new SendUserNotificationAction();
-                $sendUserNotificationAction->execute($survey);
-            } catch (\Exception $e) {
-                Log::error($e->getMessage());
+            $currentSeason = currentSeason();
+            if (!$currentSeason) {
+                try {
+                    $sendUserNotificationAction = new SendUserNotificationAction();
+                    $sendUserNotificationAction->execute($survey);
+                } catch (\Exception $e) {
+                    Log::error($e->getMessage());
+                }
             }
             return redirect()->route('surveys.index')->with(['title' => __('translation.Done'), 'success' => __('translation.create_success')]);
         } catch (\Exception $e) {

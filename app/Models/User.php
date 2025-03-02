@@ -269,6 +269,10 @@ class User extends Authenticatable implements HasMedia
             if (!$latestEndedSeason) {
                 return $has_survey;
             }
+            $currentSeason = currentSeason();
+            if ($currentSeason) {
+                return $has_survey;
+            }
 
             $userSurveyExists = RetreatRate::where('user_id', $this->id)
                 ->where('retreat_season_id', $latestEndedSeason->id)

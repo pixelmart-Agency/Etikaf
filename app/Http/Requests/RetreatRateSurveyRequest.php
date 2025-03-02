@@ -90,7 +90,7 @@ class RetreatRateSurveyRequest extends FormRequest
     public function withValidator($validator)
     {
         $validator->after(function ($validator) {
-            $currentSurvey = currentSurvey();
+            $currentSurvey = request()->route('retreatSurvey');
             $questions = RetreatRateQuestion::where('retreat_survey_id', $currentSurvey->id)->get();
 
             foreach ($questions as $i => $question) {

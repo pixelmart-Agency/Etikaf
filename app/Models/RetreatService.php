@@ -58,9 +58,9 @@ class RetreatService extends Model implements HasMedia
             return false;
         }
         return RetreatRequestServiceModel::whereHas('retreatRequest', function ($query) use ($currentSeason) {
-            $query->where('retreat_season_id', $currentSeason->id);
+            $query->where('retreat_season_id', $currentSeason->id)
+                ->where('user_id', $userId);
         })
-            ->where('user_id', $userId)
             ->where('retreat_service_id', $this->id)
             ->exists();
     }

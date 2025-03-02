@@ -46,7 +46,7 @@ class RetreatRateSurveyRequest extends FormRequest
             // 'text_answers' => 'array',
         ];
 
-        $currentSurvey = currentSurvey();
+        $currentSurvey = request()->route('retreatSurvey');
         $questions = RetreatRateQuestion::where('retreat_survey_id', $currentSurvey->id)->get();
         $i = 0;
         foreach ($questions as $question) {

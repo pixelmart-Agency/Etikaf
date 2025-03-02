@@ -32,7 +32,7 @@ class RetreatRateSurveyRequest extends FormRequest
             'retreat_rate_question_ids.*' => [
                 'integer',
                 function ($attribute, $value, $fail) {
-                    $currentSurvey = currentSurvey();
+                    $currentSurvey = request()->route('retreatSurvey');
                     $validQuestionIds = RetreatRateQuestion::where('retreat_survey_id', $currentSurvey->id)
                         ->pluck('id')
                         ->toArray();

@@ -150,11 +150,14 @@ class SurveyController extends Controller
             $survey = Survey::where('id', $surveyId)->first();
             if (!$survey->is_active) {
                 Survey::where('is_active', true)->update(['is_active' => false]);
-                try {
-                    $sendUserNotificationAction = new SendUserNotificationAction();
-                    $sendUserNotificationAction->execute($survey);
-                } catch (\Exception $e) {
-                    Log::error($e->getMessage());
+                $currentSeason = currentSeason();
+                if (!$currentSeason) {
+                    try {
+                        $sendUserNotificationAction = new SendUserNotificationAction();
+                        $sendUserNotificationAction->execute($survey);
+                    } catch (\Exception $e) {
+                        Log::error($e->getMessage());
+                    }
                 }
             }
             $survey->update(['is_active' => !$survey->is_active]);
